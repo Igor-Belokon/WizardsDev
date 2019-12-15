@@ -6,11 +6,20 @@ class Center extends React.Component {
   render() {
     return (
       <div className="center">
-        {this.props.click ? <Contact1 /> : null}
-        {this.props.click ? <Contact2 /> : null}
-        {this.props.click ? <Contact3 /> : null}
-        {this.props.click ? <Contact4 /> : null}
+        {this.props.click ? (
+          <div className="">
+            <Contact1 />
+            <Contact2 />
+          </div>
+        ) : null}
+
         <div className="center-map"></div>
+        {this.props.click ? (
+          <div className="">
+            <Contact3 />
+            <Contact4 />
+          </div>
+        ) : null}
       </div>
     );
   }

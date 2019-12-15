@@ -18,6 +18,7 @@
   height: 500px;
   background: #1f1d2a;
   padding-top: 50px;
+  display: flex;
 }
 .center-map {
   margin: auto;
@@ -28,11 +29,13 @@
   background-image: url(./images/map-desctop2.png);
 }
 .input-container {
+  flex-wrap: wrap;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .form-container {
+  flex-wrap: wrap;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -44,6 +47,7 @@
   padding-left: 40px;
   color: aliceblue;
   width: 350px;
+  min-width: 150px;
   height: 40px;
   margin: 10px;
   background-size: 30px 30px;
@@ -110,6 +114,7 @@
   width: 100%;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .cho {
   margin: auto;
@@ -169,6 +174,7 @@
 .carusel-container {
   background: #272729;
   justify-content: center;
+  flex-wrap: wrap;
   display: flex;
 }
 .carusel {
@@ -192,31 +198,32 @@
   font-size: 12px;
 }
 .contact1 {
-  position: absolute;
   display: flex;
   flex-direction: column;
   margin-left: 10%;
   justify-content: center;
 }
 .contact2 {
-  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 15%;
+  margin-top: 7.5%;
   margin-left: 12%;
 }
 .contact3 {
-  position: absolute;
+  margin-left: 15%;
   display: flex;
   flex-direction: column;
-  margin-left: 80%;
+  justify-content: center;
+  align-content: center;
+  width: 50%;
 }
 .contact4 {
-  position: absolute;
+  margin-left: 15%;
   display: flex;
   flex-direction: column;
-  margin-left: 80%;
+  justify-content: center;
+  width: 50%;
   margin-top: 15%;
 }
 
@@ -235,14 +242,14 @@
   background-image: url(./images/con2.png);
 }
 .con3 {
-  margin-left: 25%;
+  margin-left: 35%;
   width: 40px;
   height: 50px;
   background-size: 40px 50px;
   background-image: url(./images/con3.png);
 }
 .con4 {
-  margin-left: 25%;
+  margin-left: 35%;
   width: 40px;
   height: 50px;
   background-size: 40px 50px;
@@ -252,55 +259,54 @@
   color: aliceblue;
   text-align: center;
   font-size: 12px;
-  width: 20%;
+  width: 30%;
   margin-top: 1%;
   margin-bottom: 1%;
 }
 .con-text2 {
   color: aliceblue;
   text-align: center;
-  width: 20%;
+  width: 30%;
   font-size: 10px;
 }
 .con-text1-1 {
   color: aliceblue;
   text-align: center;
   font-size: 12px;
-  width: 20%;
+  width: 30%;
   margin-top: 1%;
   margin-bottom: 1%;
 }
 .con-text2-1 {
   color: aliceblue;
   text-align: center;
-  width: 20%;
+  width: 30%;
   font-size: 10px;
 }
 .con-text1-2 {
   color: aliceblue;
   text-align: center;
   font-size: 12px;
-  width: 60%;
   margin-top: 1%;
   margin-bottom: 1%;
 }
 .con-text2-2 {
   color: aliceblue;
   text-align: center;
-  width: 60%;
+
   font-size: 10px;
 }
 .con-text1-3 {
   color: aliceblue;
   text-align: center;
   font-size: 12px;
-  width: 60%;
+
   margin-top: 1%;
   margin-bottom: 1%;
 }
 .con-text2-3 {
   color: aliceblue;
   text-align: center;
-  width: 60%;
+
   font-size: 10px;
 }
