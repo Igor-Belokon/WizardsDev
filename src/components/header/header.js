@@ -8,11 +8,7 @@ class Header extends React.Component {
     click: false
   };
   onHandleClick = () => {
-    if (this.state.click === false) {
-      this.setState({ click: true });
-    } else {
-      this.setState({ click: false });
-    }
+    this.setState({ click: !this.state.click });
   };
   render() {
     return (

@@ -3,6 +3,14 @@ import React from "react";
 import "../index.css";
 
 class Center extends React.Component {
+  state = {
+    showPopup: false
+  };
+  togglePopup() {
+    this.setState({
+      showPopup: !this.state.showPopup
+    });
+  }
   render() {
     return (
       <div className="center">
@@ -13,12 +21,20 @@ class Center extends React.Component {
           </div>
         ) : null}
 
-        <div className="center-map"></div>
+        <div className="center-map">
+          <div
+            className="showPopup"
+            onClick={this.togglePopup.bind(this)}
+          ></div>
+        </div>
         {this.props.click ? (
           <div className="">
             <Contact3 />
             <Contact4 />
           </div>
+        ) : null}
+        {this.state.showPopup ? (
+          <Popup closePopup={this.togglePopup.bind(this)} />
         ) : null}
       </div>
     );
@@ -79,6 +95,24 @@ class Contact4 extends React.Component {
         <div className="con-text2-3">
           Полная интеграция в работу наших компаний-партнеров, крупнейших
           корпораций и лидеров мировых рынков отрасли финансовых технологий.
+        </div>
+      </div>
+    );
+  }
+}
+class Popup extends React.Component {
+  render() {
+    return (
+      <div className="popup">
+        <div className="popup_inner">
+          <div className="close-popup" onClick={this.props.closePopup}>
+            X
+          </div>
+          <div className="popupName">Контакты</div>
+          <div className="popup-text">
+            г. Днепр ул. Симферопольская +38 063 119 62 09
+          </div>
+          <div className="popup-log"></div>
         </div>
       </div>
     );
